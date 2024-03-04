@@ -1,4 +1,4 @@
-## Esercizio di oggi: PHP OOP
+## Esercizio di oggi(04/03/24): PHP OOP
 
 Nome repo: `php-oop-1`
 
