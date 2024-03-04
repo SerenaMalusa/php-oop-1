@@ -1,5 +1,5 @@
 <tr>
-    <td><?php echo get_class($production->type) ?></td>
+    <td><?= get_class($production->type) ?></td>
     <td><?= $production->title ?></td>
     <td><?= $production->og_language ?></td>
     <td>
@@ -18,5 +18,5 @@
     </td>
     <td><?= $production->genre->name ?></td>
     <td><?= $production->get_vote() ?></td>
-    <td><?php echo ($production->is_best_seller) ? 'YES' : 'NO' ?></td>
+    <td><?= ($production->is_best_seller) ? 'YES' : 'NO' ?></td>
 </tr>
