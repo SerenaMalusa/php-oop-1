@@ -1,6 +1,8 @@
 <?php
 
 require_once __DIR__ . '/Models/Production.php';
+require_once __DIR__ . '/Models/Movie.php';
+require_once __DIR__ . '/Models/Serie.php';
 require_once __DIR__ . '/db/Productions.php';
 
 // var_dump($the_fellowshio_of_the_ring, $black_mirror);
@@ -11,6 +13,9 @@ require_once __DIR__ . '/db/Productions.php';
 //     $the_fellowshio_of_the_ring,
 //     $black_mirror
 // ];
+
+// var_dump($don_matteo->type->first_air_date);
+
 
 ?>
 
@@ -31,6 +36,8 @@ require_once __DIR__ . '/db/Productions.php';
                     <th scope="col">Type</th>
                     <th scope="col">Title</th>
                     <th scope="col">Original language</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">First release</th>
                     <th scope="col">Vote</th>
                     <th scope="col">Best Seller</th>
                 </tr>

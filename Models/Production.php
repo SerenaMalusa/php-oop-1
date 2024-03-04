@@ -10,7 +10,7 @@ class Production
     public $is_best_seller;
 
     function __construct(
-        string $type,
+        $type,
         string $title,
         string $language,
         $vote = false
