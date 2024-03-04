@@ -16,6 +16,7 @@
             <?= $production->type->first_air_date ?>
         <?php } ?>
     </td>
+    <td><?= $production->genre->name ?></td>
     <td><?= $production->get_vote() ?></td>
     <td><?php echo ($production->is_best_seller) ? 'YES' : 'NO' ?></td>
 </tr>
