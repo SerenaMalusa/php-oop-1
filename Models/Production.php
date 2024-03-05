@@ -2,8 +2,6 @@
 
 class Production
 {
-
-    public $type;
     public $genre;
     public $title;
     public $og_language;
@@ -11,13 +9,11 @@ class Production
     public $is_best_seller;
 
     function __construct(
-        $type,
         Genre $genre,
         string $title,
         string $language,
         $vote = false
     ) {
-        $this->type = $type;
         $this->genre = $genre;
         $this->title = $title;
         $this->og_language = $language;

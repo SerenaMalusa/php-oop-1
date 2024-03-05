@@ -1,8 +1,8 @@
 <tr>
-    <td><?= get_class($production->type) ?></td>
+    <!-- <td><?= get_class($production->type) ?></td> -->
     <td><?= $production->title ?></td>
     <td><?= $production->og_language ?></td>
-    <td>
+    <!-- <td>
         <?php if (get_class($production->type) == 'Movie') { ?>
             <?= $production->type->duration ?> min
         <?php } elseif (get_class($production->type) == 'Serie') { ?>
@@ -15,7 +15,7 @@
         <?php } elseif (get_class($production->type) == 'Serie') { ?>
             <?= $production->type->first_air_date ?>
         <?php } ?>
-    </td>
+    </td> -->
     <td><?= $production->genre->name ?></td>
     <td><?= $production->get_vote() ?></td>
     <td><?= ($production->is_best_seller) ? 'YES' : 'NO' ?></td>

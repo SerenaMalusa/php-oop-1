@@ -16,7 +16,7 @@ require_once __DIR__ . '/db/Productions.php';
 // ];
 
 // var_dump($don_matteo->type->first_air_date);
-
+var_dump($productions);
 
 ?>
 
