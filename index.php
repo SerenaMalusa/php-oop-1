@@ -35,7 +35,6 @@ require_once __DIR__ . '/db/Productions.php';
         <table class="table mt-5">
             <thead>
                 <tr>
-                    <th scope="col">Type</th>
                     <th scope="col">Title</th>
                     <th scope="col">Original language</th>
                     <th scope="col">Duration</th>
@@ -43,6 +42,8 @@ require_once __DIR__ . '/db/Productions.php';
                     <th scope="col">Genre</th>
                     <th scope="col">Vote</th>
                     <th scope="col">Best Seller</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Profits</th>
                 </tr>
             </thead>
             <tbody>
