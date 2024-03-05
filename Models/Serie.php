@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/Production.php';
+require_once __DIR__ . '/Genre.php';
 require_once __DIR__ . '/FirstAirDate.php';
 
 class Serie extends Production
@@ -14,7 +15,7 @@ class Serie extends Production
         $_language,
         $_vote,
         $_seasons,
-        $_first_air_date
+        $_first_air_date = ''
     ) {
         parent::__construct($_genre, $_title, $_language, $_vote,);
         $this->set_first_air_date($_first_air_date);
