@@ -36,12 +36,12 @@ require_once __DIR__ . '/db/Productions.php';
             <thead>
                 <tr>
                     <th scope="col">Title</th>
-                    <th scope="col">Original language</th>
-                    <th scope="col">Duration</th>
-                    <th scope="col">First release</th>
                     <th scope="col">Genre</th>
-                    <th scope="col">Vote</th>
+                    <th scope="col">Duration</th>
                     <th scope="col">Best Seller</th>
+                    <th scope="col">First release</th>
+                    <th scope="col">Original language</th>
+                    <th scope="col">Vote</th>
                     <th scope="col">Type</th>
                     <th scope="col">Profits</th>
                 </tr>

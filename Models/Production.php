@@ -47,7 +47,7 @@ class Production
     public function get_vote()
     {
         if ($this->vote == false) {
-            return 'there are no votes for this title yet';
+            return 'no ratings yet';
         } else {
             return $this->vote;
         }
