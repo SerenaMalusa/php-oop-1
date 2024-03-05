@@ -4,6 +4,7 @@ require_once __DIR__ . '/Models/Production.php';
 require_once __DIR__ . '/Models/Movie.php';
 require_once __DIR__ . '/Models/Serie.php';
 require_once __DIR__ . '/Models/Genre.php';
+require_once __DIR__ . '/Models/FirstAirDate.php';
 require_once __DIR__ . '/db/Productions.php';
 
 // var_dump($the_fellowshio_of_the_ring, $black_mirror);
