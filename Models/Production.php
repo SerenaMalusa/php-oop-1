@@ -4,23 +4,39 @@ require_once __DIR__ . '/Genre.php';
 
 class Production
 {
-    public $genre;
+    public $genres;
     public $title;
     public $og_language;
     public $vote;
     public $is_best_seller;
 
     function __construct(
-        Genre $genre,
+        $genres,
         string $title,
         string $language,
         $vote = false
     ) {
-        $this->genre = $genre;
+        $this->set_genres($genres);
         $this->title = $title;
         $this->og_language = $language;
         $this->vote = $vote;
         $this->set_best_seller();
+    }
+
+    function set_genres($genres)
+    {
+
+        if (!is_array($genres) || empty($genres)) {
+            throw new Exception("Every production must contain at least on genre, and they must be contained in an array.");
+        }
+
+        foreach ($genres as $genre) {
+            if (!($genre instanceof Genre)) {
+                throw new Exception("Every element of the array genres must be an instance of the class Genre.");
+            }
+        }
+
+        $this->genres = $genres;
     }
 
     public function set_best_seller()

@@ -9,7 +9,11 @@
         <?php } ?>
     </td>
     <td><?= $production->get_first_air_date() ?></td>
-    <td><?= $production->genre->name ?></td>
+    <td>
+        <?php foreach ($production->genres as $index => $genre) : ?>
+            <?php echo ($index == count($production->genres) - 1) ? $genre->name : $genre->name . '-' ?>
+        <?php endforeach; ?>
+    </td>
     <td><?= $production->get_vote() ?></td>
     <td><?= ($production->is_best_seller) ? 'YES' : 'NO' ?></td>
     <td><?= get_class($production) ?></td>
