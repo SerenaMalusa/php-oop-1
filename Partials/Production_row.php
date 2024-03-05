@@ -11,7 +11,7 @@
     <td><?= $production->get_first_air_date() ?></td>
     <td>
         <?php foreach ($production->genres as $index => $genre) : ?>
-            <?php echo ($index == count($production->genres) - 1) ? $genre->name : $genre->name . '-' ?>
+            <?php echo ($index == count($production->genres) - 1) ? $genre->name : $genre->name . ' -' ?>
         <?php endforeach; ?>
     </td>
     <td><?= $production->get_vote() ?></td>
