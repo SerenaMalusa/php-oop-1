@@ -30,4 +30,19 @@ class Movie extends Production
         $this->duration = $duration;
         $this->release_date = $release_date;
     }
+
+    function get_profits()
+    {
+        return $this->profits;
+    }
+
+    function get_duration()
+    {
+        return $this->duration;
+    }
+
+    function get_release_date()
+    {
+        return $this->release_date;
+    }
 }
